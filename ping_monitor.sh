@@ -46,7 +46,7 @@ while true; do
         error_counter=$((error_counter + 1))
         
         # Check router connectivity on every error
-        if ping -c 1 -W 3 10.0.0.1 > /dev/null 2>&1 || ping -c 1 -W 3 192.168.0.1 > /dev/null 2>&1; then
+        if ping -c 1 -W 3 10.0.0.1 > /dev/null 2>&1 || ping -c 1 -W 3 192.168.68.1 > /dev/null 2>&1; then
             current_router_status="Router reachable"
         else
             current_router_status="Router unreachable"
